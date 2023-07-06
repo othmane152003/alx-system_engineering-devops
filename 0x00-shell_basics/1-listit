@@ -1,2 +1,2 @@
-listit contains
-it should be 2
+#!/bin/bash
+pwd
