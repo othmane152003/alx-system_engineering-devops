@@ -1,2 +1,11 @@
 #!/bin/bash
-chmod --reference-olleh hello
+
+# Get the user's home directory from the output of the `getent` command
+home_directory=$(getent passwd "$(id -un)" | cut -d: -f6)
+
+# Change the working directory to the user's home directory using the `cd` command
+cd "$home_directory"
+
+# Print the file permissions of the script using the `ls -l` command
+ls -l "path/to/2-bring_me_home" | awk '{print $1}'
+
