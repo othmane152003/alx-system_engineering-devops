@@ -1,2 +1,2 @@
-# alx-system_engineering-devops
-#!/bin/bash
+Get the absolute path of the current working directory
+    current_dir=$(pwd)
