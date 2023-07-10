@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$count"
+find . -type d ! -path . -print | wc -1
