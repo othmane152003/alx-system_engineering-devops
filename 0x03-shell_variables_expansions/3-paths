@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | awk -F: '{for(i=1;i<=NF;i++)if($i!="")printf("%s:",$i);}' | sed 's/:$//'
+echo "$num_directories"
